@@ -8,7 +8,7 @@
           y: event.clientY
         };
       } 
-/*will return 1 if x oy y is in range[a,b]*/
+/*will return 1 if x or y is in range[a,b]*/
       function rangeX(a,x,b)
       {
         if(x>a && x<=b)
