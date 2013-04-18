@@ -1,10 +1,14 @@
 /*Hi there...nice to meet YOU specially HERE*/
-      function mouseCord(event) {
-        return {
+/*will return mouse cordinates*/
+      function mouseCord(event) 
+      {
+        return 
+        {
           x: event.clientX,
           y: event.clientY
         };
       } 
+/*will return 1 if x oy y is in range[a,b]*/
       function rangeX(a,x,b)
       {
         if(x>a && x<=b)
@@ -19,26 +23,24 @@
         else 
           {return 0;}
       }
-      /***********detected :)*************/
-      /****************activities on mousemove*******************/
+/***********detected :)*************/
+/*****activities on mousemove*******/
       document.addEventListener('mousemove', function(event) {
         /* page dimensions */ 
-        //var w = document.body.offsetWidth;
-  var w = window.innerWidth;
+        var w = window.innerWidth;
         var h = window.innerHeight;
-	//document.getElementById("navigation-bar").innerHTML=w+" alpha "+h;
         /*******************/
         /*current co-ordinates*/
         var where = mouseCord(event); 
         var X = where.x;
         var Y = where.y;
         var current = 'Mouse Position: ' +X+','+Y;
-        /***********to find the region and change accordingly************/
-        /* wait! something is happening */
+/****to find the region and change accordingly***/
         var id = 1;
-        for(id=1;id<=28;id++)
+        for(id=1;id<=28;id++)  // as now only 28 images are there
         {var obj = $('img[name='+id+']');
-        var objCord = obj.offset();
+/*left corner position of selected element*/
+        var objCord = obj.offset(); 
         var objX = objCord.left;
         var objY = objCord.top;
         if((rangeX(objX,X,objX+86)==1) && (Y>=objY+100))/*bottom*/
