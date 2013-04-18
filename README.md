@@ -1,7 +1,7 @@
 PeopleMotion
 ============
 
-<h3>Team Page</h3> <br>
+<h3>Team Page</h3>
 <h4>www.ekshitij.com/team</h4><br>for <a href="http://ekshitij.com">Kshitij</a> Magazine, Developed by me.
 
 <h2>Kshitij Magazine</h2>
