@@ -11,4 +11,9 @@ by default page shows all images in general mode...<br>
 with respect to every image, 9 parts are there with image in center<br>
 on mouse activity it detect current position of cursor<br>
 taking refrence of the image element itself<br>
-and then change image source to corresponding image source.
+and then change image source to corresponding image source. <hr>
+<h3><code>Thing to Do</code></h3><br>
+<ul>
+ <li>minimize the BootStrap</li>
+ <li>add all pictures in a single strip to load page fast</li>
+</ul>
